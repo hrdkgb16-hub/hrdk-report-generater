@@ -794,7 +794,7 @@ def pixel_mosaic_html(cols=48, rows=11, seed=7, lime=False):
     return f'<div class="ax-mosaic" style="grid-template-columns:repeat({cols},1fr)">{"".join(cells)}</div>'
 
 
-st.markdown("""
+st.html("""
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
 
@@ -1059,7 +1059,7 @@ ul[data-testid="stSelectboxVirtualDropdown"] li:last-child * {
     font-weight: 600 !important;
 }
 </style>
-""", unsafe_allow_html=True)
+""")
 
 # 상단 바 + 히어로 + 픽셀 모자이크
 st.markdown(
